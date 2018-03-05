@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+body {
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+canvas {
+   display: block;
+ }
+#particles-js {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #39b8cc;
+}
+
+main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}
+main .info-wrapper {
+  z-index: 10;
+  padding: 40px;
+  min-width: 300px;
+  color: #329eaf;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.info-wrapper h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.info-wrapper .links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 0;
+  list-style: none;
+}
+.info-wrapper .links li {
+  display: inline-block;
+}
+.info-wrapper .links a {
+  color: #fff;
+  fill: #fff;
+  transition: all .5s, transform .5s ease-out;  
+}
+.links svg {
+  height: 60px;
+  width: 60px;
+}
+
+.info-wrapper .contact {
+  margin-top: 10px;
+  height: 70px;
+  text-align: center;
+  color: #fff;
+}
+.info-wrapper .contact h2 {
+  font-weight: normal;
+}
+.info-wrapper .contact p {
+  margin-top: 10px;
+}
+.info-wrapper .contact a {
+  color: #329eaf;
+}
+
+
+/* logo color */
+.info-wrapper .links .behance:hover {
+  border-radius: 100%;
+  color: #2f68ff;
+  fill: #2f68ff;
+  transform: scale(1.25);
+}
+.info-wrapper .links .tumblr:hover {
+  border-radius: 100%;
+  color: #395875;
+  fill: #395875;
+  transform: scale(1.25);
+  transition: color .5s, transform .5s ease-out;
+}
+.info-wrapper .links .instagram:hover {
+  border-radius: 100%;
+  color: #e3569a;
+  fill: #e3569a;
+  transform: scale(1.25);
+  transition: color .5s, transform .5s ease-out;
+}
