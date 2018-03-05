@@ -1,17 +1,7 @@
 particlesJS.load("particles-js",'/scripts/snowflakes.json')
 
-$('h1')
-  .on('mouseenter', function () {
+$('h1').on('mouseenter', function () {
     tab('contact')
-  })
-  .on('click', function () {
-    var $links = $('.links')
-
-    if ($links.is(':visible')) {
-      tab('contact')
-    } else {
-      tab('links')
-    }
   })
 
 $('.info-wrapper').on('mouseleave', function () {
