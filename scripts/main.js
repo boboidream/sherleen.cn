@@ -1,17 +1,32 @@
 particlesJS.load("particles-js",'/scripts/snowflakes.json')
 
-$('h1').on('mouseenter', function () {
-    var $links = $('.links'),
-        $contact = $('.contact')
-    
-    $links.hide()
-    $contact.fadeIn()
+$('h1')
+  .on('mouseenter', function () {
+    tab('contact')
+  })
+  .on('click', function () {
+    var $links = $('.links')
+
+    if ($links.is(':visible')) {
+      tab('contact')
+    } else {
+      tab('links')
+    }
   })
 
 $('.info-wrapper').on('mouseleave', function () {
-    var $links = $('.links'),
-        $contact = $('.contact')
-    
-    $contact.hide()
-    $links.fadeIn()
+    tab('links')
   })
+
+function tab(type) {
+  var $links = $('.links'),
+      $contact = $('.contact')
+
+  if (type === 'links') {
+    $contact.hide()
+    $links.stop().fadeIn()
+  } else {
+    $links.hide()
+    $contact.stop().fadeIn()
+  }
+}
