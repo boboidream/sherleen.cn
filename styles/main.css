@@ -59,6 +59,7 @@ main .info-wrapper {
   display: inline-block;
 }
 .info-wrapper .links a {
+  display: inline-block;
   color: #fff;
   fill: #fff;
   transition: all .5s, transform .5s ease-out;
