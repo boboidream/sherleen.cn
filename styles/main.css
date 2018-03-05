@@ -45,7 +45,7 @@ main .info-wrapper {
 .info-wrapper h1 {
   text-align: center;
   font-size: 60px;
-  cursor: pointer;
+  user-select: none;
 }
 
 .info-wrapper .links {
