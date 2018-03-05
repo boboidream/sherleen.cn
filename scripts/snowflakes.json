@@ -29,7 +29,7 @@
     },
     "modes": {
       "push": {
-        "particles_nb": 12
+        "particles_nb": 3
       }
     }
   }
