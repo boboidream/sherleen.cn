@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
  }
- a,button,input,textarea {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-user-modify: read-write-plaintext-only; 
-}
 body {
   font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
@@ -45,7 +41,6 @@ main .info-wrapper {
 .info-wrapper h1 {
   text-align: center;
   font-size: 60px;
-  user-select: none;
 }
 
 .info-wrapper .links {
@@ -62,9 +57,7 @@ main .info-wrapper {
   display: inline-block;
   color: #fff;
   fill: #fff;
-  transition: all .5s, transform .5s ease-out;
-  outline: none;
-  user-select: none; 
+  transition: all .5s, transform .5s ease-out;  
 }
 .links svg {
   height: 60px;

@@ -1,22 +1,17 @@
 particlesJS.load("particles-js",'/scripts/snowflakes.json')
 
 $('h1').on('mouseenter', function () {
-    tab('contact')
+    var $links = $('.links'),
+        $contact = $('.contact')
+    
+    $links.hide()
+    $contact.fadeIn()
   })
 
 $('.info-wrapper').on('mouseleave', function () {
-    tab('links')
-  })
-
-function tab(type) {
-  var $links = $('.links'),
-      $contact = $('.contact')
-
-  if (type === 'links') {
+    var $links = $('.links'),
+        $contact = $('.contact')
+    
     $contact.hide()
-    $links.stop().fadeIn()
-  } else {
-    $links.hide()
-    $contact.stop().fadeIn()
-  }
-}
+    $links.fadeIn()
+  })
