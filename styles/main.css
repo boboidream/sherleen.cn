@@ -61,7 +61,9 @@ main .info-wrapper {
 .info-wrapper .links a {
   color: #fff;
   fill: #fff;
-  transition: all .5s, transform .5s ease-out;  
+  transition: all .5s, transform .5s ease-out;
+  outline: none;
+  user-select: none; 
 }
 .links svg {
   height: 60px;
