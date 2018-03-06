@@ -5,7 +5,7 @@ $('h1').on('mouseenter', function () {
         $contact = $('.contact')
     
     $links.hide()
-    $contact.fadeIn()
+    $contact.stop().fadeIn()
   })
 
 $('.info-wrapper').on('mouseleave', function () {
@@ -13,5 +13,5 @@ $('.info-wrapper').on('mouseleave', function () {
         $contact = $('.contact')
     
     $contact.hide()
-    $links.fadeIn()
+    $links.stop().fadeIn()
   })
